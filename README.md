@@ -5,12 +5,12 @@ Arduino based scientific calculator which can perform arithmetic as well as scie
 
 `#include <Keypad.h>
 #include <LiquidCrystal.h>
-#include <math.h>`
+#include <math.h>
 
 //used 'D' for enter
-`
+
 LiquidCrystal lcd(3,2,12,13,11,10);
-``
+
 const byte ROWS = 4;
 const byte COLS = 4;
 char keys[ROWS][COLS] = {
@@ -20,7 +20,7 @@ char keys[ROWS][COLS] = {
   {'#','0','*','D'}
 };
 byte rowPins[ROWS] = {5, 4,15,14};
-byte colPins[COLS] = {8, 7, 6,9};`
+byte colPins[COLS] = {8, 7, 6,9};
 
 String show_val = "";
 double prev_val = 0;
